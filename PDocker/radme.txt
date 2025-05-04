@@ -1,0 +1,4 @@
+
+Primero este: docker-compose up --build
+Luego este y ya jala.
+docker-compose exec backend python db.py
