@@ -1,4 +1,7 @@
-
-Primero este: docker-compose up --build
-Luego este y ya jala.
-docker-compose exec backend python db.py
+Instrucciones de Despliegue 
+1. Clonar el repositorio del proyecto git clone cd PDocker 
+2. Revisar archivo .env Asegúrate de que el archivo .env contiene las variables adecuadas como: - POSTGRES_USER - POSTGRES_PASSWORD - POSTGRES_DB 
+3. Construir y levantar los servicios docker-compose up --build -d 
+5.-Ejecutar docker-compose exec backend python db.py (Solo si se esta Ejecutando por primera vez)
+6.-Verificar el acceso 
+Una vez todos los contenedores estén levantados, abre un navegador y accede a: https://localhost (o la IP del host si estás en un servidor remoto)
